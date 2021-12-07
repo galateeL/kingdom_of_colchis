@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Contact the Royal Kingdom</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="contact-page">
+      <header>
+        <div id="container_logo">
+          <img src="assets/logo-royal-family.png" alt="royal family logo" id="img_logo" width="100"/>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="royal-family.html">Royal Family</a></li>
+            <li><a href="assets.html">Royal Assets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="contact">
+        <h2>
+        Contact the Royal Kingdom
+        </h2> 
+          <div id="contact-container">
+            <p>
+            Fill in the form below to contact the Royal Kingdom
+            </p>
+            <form id="contact-form">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Artemis" required><br>
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="example@hermesmail.com" required><br>
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" required></textarea>
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div><!--fermeture div="contact-container"-->
+      </section><!--fermeture section id="contact"-->
+     </div><!--fermeture div id="contact-page"-->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#index-page {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+#container_logo {
+  display: flex;
+  width: 140px;
+  background-color:white;
+  justify-content: center;
+}
+
+#img_logo {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 1400px;
+}
+
+ul {
+  display: flex;
+  height: 50%;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color:rgb(196, 133, 15);
+}
+
+ul li {
+  list-style: none;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-right: 3px white solid;
+  background-color: rgb(196,196,15);
+}
+
+#banner {
+  background-color:rgba(73,104,173,0.4);
+  height: 40%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  background: url("./assets/kingdom-of-colchis.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+ #welcome {
+  text-align: center;
+  color:white;
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px rgb(54,81,131);
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome h1 {
+  margin: 0;
+}
+
+#royal-crown {
+  text-align: center;
+  height: 60%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+}
+#royal-crown img {
+  padding:5px;
+}
+
+#about p::first-letter {
+  color:white;
+  font-size: 300%;
+  font-weight:bold;
+  font-family: 'Meow Script', cursive;
+}
+
+#about {
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(158,188,255);
+  margin:10px;
+  padding:5px 20px 20px 20px;
+  line-height: 25px;
+  color: white;
+}
+
+#about h2 {
+  font-family: 'Dosis', sans-serif;
+  color:white;
+  font-size:40px;
+}
+
+#royal-family h2, #assets h2, #contact h2{
+  font-family: 'Dosis', sans-serif;
+  color:white;
+  font-size:40px;
+  background-color: rgb(224,124,44);
+  text-align: center;
+  padding: 15px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#royal-family-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.royal-family-portrait {
+  margin: 20px;
+}
+
+.royal-family-portrait img {
+  border:rgb(196,196,15) 15px ridge;
+  padding:20px;
+  margin-bottom: 15px;
+  height: 70%;
+}
+
+.royal-family-portrait p {
+  text-align: center;
+  color:white;
+  font-size: 30px;
+  font-weight:bold;
+  font-family: 'Dosis', sans-serif;
+  margin:0;
+  padding: 10px;
+  background-color:rgb(196,196,15);
+  border: rgb(141, 141, 11) 2px solid;
+  border-radius: 10px;
+}
+
+#assets-container {
+  display: flex;
+  justify-content: center; 
+}
+
+table {
+ margin: 70px;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px;
+ border-collapse: collapse;
+ background-color:rgb(158,188,255,0.5);
+ box-shadow:6px 6px 0px rgb(158,188,255);
+ width:600px ;
+}
+
+caption {
+  padding: 10px;
+  color: rgb(196,196,15);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+td, th {
+  border: solid 2px white;
+  padding: 10px;
+}
+
+th {
+  text-align: center;
+  color:rgb(69, 122, 235);
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact-container p {
+  padding: 10px;
+  color: rgb(196,196,15);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#contact-form {
+justify-content: center;
+}
+
+label {
+  color:rgb(158,188,255);
+  font-size: 20px;
+}
+
+input[type="text"], input[type="email"], #message {
+width: 300px;
+margin: 5px 0 5px;
+}
+
+input[type="submit"] {
+  background-color: rgb(196,196,15);
+  border:rgb(196,196,15);
+  border-radius:6px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:425px) {
+  header, ul{
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  nav{
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+
+  ul li {
+    width: 150px;
+    border : solid 5px white;
+    border-radius: 10px;
+  }
+
+  #img_logo {
+    margin-top:12px;
+  }
+
+  #welcome, #about h2 {
+    font-size: 20px;
+  }
+
+  #royal-family-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  table{
+    font-size: 10px;
+  }
+
+  caption {
+    font-size: 20px;
+  }
+
+  #royal-family h2, #assets h2, #contact h2 {
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    font-size:20px;
+    background-color: rgb(224,124,44);
+    text-align: center;
+    padding: 5px;
+  }
+
+  #contact-container p {
+    font-size: 20px; 
+  }
+}
+
+
